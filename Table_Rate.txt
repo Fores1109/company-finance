@@ -1,0 +1,34 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                 spread   R-squared:                       0.234
+Model:                            OLS   Adj. R-squared:                  0.234
+Method:                 Least Squares   F-statistic:                     122.2
+Date:                Mon, 29 Jun 2026   Prob (F-statistic):           9.22e-22
+Time:                        23:28:17   Log-Likelihood:            -2.7262e+06
+No. Observations:             1789178   AIC:                         5.452e+06
+Df Residuals:                 1789169   BIC:                         5.453e+06
+Df Model:                           8                                         
+Covariance Type:              cluster                                         
+=================================================================================
+                    coef    std err          z      P>|z|      [0.025      0.975]
+---------------------------------------------------------------------------------
+Intercept       266.5802     33.682      7.915      0.000     200.564     332.596
+num_banks        -0.0010      0.000     -2.320      0.020      -0.002      -0.000
+log_amount       -0.4475      0.055     -8.174      0.000      -0.555      -0.340
+log_term          0.0072      0.108      0.067      0.947      -0.205       0.219
+firm_size        -0.1460      0.035     -4.213      0.000      -0.214      -0.078
+profitability    -4.7325      0.752     -6.294      0.000      -6.206      -3.259
+leverage          0.1345      0.200      0.672      0.502      -0.258       0.527
+tangibility      -0.5853      0.428     -1.366      0.172      -1.425       0.255
+year             -0.1289      0.017     -7.725      0.000      -0.162      -0.096
+==============================================================================
+Omnibus:                   183331.351   Durbin-Watson:                   0.036
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):           248161.954
+Skew:                           0.848   Prob(JB):                         0.00
+Kurtosis:                       3.675   Cond. No.                     1.83e+06
+==============================================================================
+
+Notes:
+[1] Standard Errors are robust to cluster correlation (cluster)
+[2] The condition number is large, 1.83e+06. This might indicate that there are
+strong multicollinearity or other numerical problems.
